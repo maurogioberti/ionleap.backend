@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Build\Debug</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <OutputPath>..\Build\Release</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Neoris.Ionleap.ResourceAccess.Adapters.Abstractions\Neoris.Ionleap.ResourceAccess.Adapters.Abstractions.csproj" />
+    <ProjectReference Include="..\Neoris.Ionleap.ResourceAccess.DataBase\Neoris.Ionleap.ResourceAccess.DataBase.csproj" />
+    <ProjectReference Include="..\Neoris.Ionleap.ResourceAccess.Entities\Neoris.Ionleap.ResourceAccess.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+{
+  "WebSiteProductsSyncJob_ExecutionTime": 21600,
+  "WebSiteProductsSyncJob_TriggerName": "WebSiteSynchronizationTrigger",
+  "WebSiteProductsSyncJob_DisplayName": "Website Scheduled Jobs",
+  "WebSiteProductsSyncJob_ProductsRequestUrl": "http://www.examplesyncurl.com/jobs/sync_products?async=true",
+  "WebSiteProductsSyncJob_TokenRequest": "s3cur1T1-T0k3N"
+}

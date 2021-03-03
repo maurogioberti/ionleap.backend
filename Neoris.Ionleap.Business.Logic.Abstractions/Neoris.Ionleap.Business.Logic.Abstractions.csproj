@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Build\Debug</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <OutputPath>..\Build\Release</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.5.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Neoris.Ionleap.CrossCutting.Configuration\Neoris.Ionleap.CrossCutting.Configuration.csproj" />
+    <ProjectReference Include="..\Neoris.Ionleap.ResourceAccess.Entities\Neoris.Ionleap.ResourceAccess.Entities.csproj" />
+    <ProjectReference Include="..\Neoris.Ionleap.ResourceAccess.Responses\Neoris.Ionleap.ResourceAccess.Responses.csproj" />
+  </ItemGroup>
+
+</Project>
